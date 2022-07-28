@@ -1,0 +1,179 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--main-BG);
+  min-height: 100vh;
+  position: relative;
+}
+
+body p, 
+body span {
+  font-size: 18px;
+}
+@media (max-width: 400px) {
+  body p,
+  body span {
+    font-size: 14px;
+  }
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 300px;
+  }
+}
+
+
+.card {
+  padding: 30px;
+  background-color: var(--card-BG);
+  border-radius: 20px;
+  color: white;
+}
+
+.card .img {
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+.card .img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cyan);
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+.card .img::after {
+  content: url(../images/icon-view.svg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card .img:hover::before {
+  opacity: 0.5;
+}
+.card .img:hover::after {
+  opacity: 1;
+}
+
+
+.card .img img {
+  max-width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card .text {
+  margin: 20px 0;
+}
+
+.card .text h3 {
+  font-size: 23px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .text h3:hover {
+  color: var(--cyan);
+}
+
+.card .text p {
+  font-weight: 300;
+  color: var(--soft-blue);
+  line-height: 1.6;
+}
+
+.card .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .details .price span {
+  color: var(--cyan);
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.card .details .timer span {
+  color: var(--soft-blue);
+  position: relative;
+}
+
+.card .details .timer span::before {
+  content: url(../images/icon-clock.svg);
+  position: absolute;
+  left: -25px;
+}
+
+.card .creator {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+} 
+
+.card .creator img {
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.card .creator p {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.card .creator a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.card .creator a:hover {
+  color: var(--cyan);
+}
