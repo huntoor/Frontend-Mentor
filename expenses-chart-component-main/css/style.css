@@ -1,0 +1,102 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --pad: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background-color: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  max-width: 500px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.balance {
+  background-color: var(--soft-red);
+  padding: var(--pad);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balance h6 {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--Very-pale-orange);
+}
+
+.balance p {
+  font-weight: 700;
+  color: var(--Very-pale-orange);
+  font-size: 24px;
+}
+
+.spending {
+  margin-top: 15px;
+  padding: var(--pad);
+  border-radius: 20px;
+  background-color: var(--Very-pale-orange);
+}
+
+.spending .text {
+  margin-bottom: 30px;
+}
+
+.spending .graph hr {
+  margin-top: 30px;
+  border: 1px solid var(--Cream);
+}
+
+.spending .total {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.spending .total h6 {
+  color: var(--Medium-brown);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.spending .total p {
+  color: var(--Dark-brown);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.spending .total .last-month {
+  text-align: right;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
