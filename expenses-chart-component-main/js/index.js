@@ -59,26 +59,21 @@ const jsonData = {
   day: [],
   amount: [],
   backgroundColor: [],
-  total: 0
 };
 
 fetch("/data.json")
   .then(res => res.json())
   .then(data => {
-    data.forEach((d, index) => {
+    data.forEach((d) => {
       jsonData.day.push(d.day);
       jsonData.amount.push(d.amount);
       jsonData.backgroundColor.push('hsl(10, 79%, 65%)');
     });
     const maxAmountIndex = jsonData.amount.indexOf(Math.max(...jsonData.amount));
     jsonData.backgroundColor.splice(maxAmountIndex, 1, 'hsl(186, 34%, 60%)');
-    jsonData.total = jsonData.amount.reduce((prev, curr) => {
-      return prev + curr;
-    }, 0);
   })
   .then(() => {
     drawChart(jsonData);
-    document.getElementById("total-spent").innerHTML = `$${jsonData.total}`;
   })
   .catch(err => {
     throw new Error(err)
