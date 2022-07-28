@@ -1,9 +1,9 @@
 // Draw bar chart using chart.js
 const drawChart = (jsonData) => {
   const options = {
-    plugins:{
+    plugins: {
       legend: {
-       display: false
+        display: false
       },
       tooltip: {
         yAlign: 'bottom',
@@ -36,17 +36,17 @@ const drawChart = (jsonData) => {
     },
     borderRadius: 5,
   };
-  
-  const data =  {
+
+  const data = {
     labels: jsonData.day,
     datasets: [{
       data: jsonData.amount,
       backgroundColor: jsonData.backgroundColor,
     }],
   };
-  
+
   const ctx = document.getElementById("chart").getContext('2d');
-  
+
   new Chart(ctx, {
     type: 'bar',
     data,
@@ -55,12 +55,12 @@ const drawChart = (jsonData) => {
 }
 
 // Collect data from data.json
+const ulr = "./data.json";
 const jsonData = {
   day: [],
   amount: [],
   backgroundColor: [],
 };
-const ulr = "./data.json";
 
 fetch(ulr)
   .then(res => res.json())

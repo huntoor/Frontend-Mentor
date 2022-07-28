@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/huntoor/Frontend-Mentor/tree/main/expenses-chart-component-main)
-- Live Site URL: [Add live site URL here](https://huntoor.github.io/Frontend-Mentor/expenses-chart-component-main)
+- Live Site URL: [Github Page](https://huntoor.github.io/Frontend-Mentor/expenses-chart-component-main)
 
 ## My process
 
