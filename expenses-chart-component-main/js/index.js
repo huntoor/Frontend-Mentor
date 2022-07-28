@@ -60,8 +60,9 @@ const jsonData = {
   amount: [],
   backgroundColor: [],
 };
+const ulr = "./data.json";
 
-fetch("/data.json")
+fetch(ulr)
   .then(res => res.json())
   .then(data => {
     data.forEach((d) => {
