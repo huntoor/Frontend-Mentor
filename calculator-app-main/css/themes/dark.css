@@ -1,0 +1,17 @@
+:root {
+  /* Backgrounds */
+  --main-background: hsl(268, 75%, 9%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  /* Keys */
+  --key-background:hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --action-key-background: hsl(281, 89%, 26%);
+  --action-key-shadow: hsl(285, 91%, 52%);
+  --equal-key: hsl(176, 100%, 44%);
+  --equal-shadow: hsl(177, 92%, 70%);
+  /* Text */
+  --key-Text: hsl(52, 100%, 62%);
+  --key-text2: hsl(198, 20%, 13%);
+  --white: hsl(0,0,100%);
+}
