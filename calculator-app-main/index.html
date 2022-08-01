@@ -8,27 +8,57 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+
+  <!-- Theme StyleSheet  -->
+  <link rel="stylesheet" href="./css/themes/default.css" id="themeStyleSheet">
   <!-- Main Style Sheet -->
   <link rel="stylesheet" href="./css/style.css">
-
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-
+  
   <title>Frontend Mentor | Calculator app</title>
-
+  
 </head>
 
 <body>
   <main>
+    <div class="header">
+      <div class="logo">
+        <h1>calc</h1>
+      </div>
+      
+      <div class="theme-switcher">
+        <h5 class="text">THEME</h6>
+        <div class="switch">
+          <div class="numbers">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <input type="range" id="switch" min="1" max="3" value="1">
+        </div>
+      </div>
+    </div>
+    
+    <div class="screen">
+      
+    </div>
+    
+    <div class="keypad">
+      
+    </div>
 
   </main>
-
+  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/huntoor">Hunter</a>.
   </footer>
+  
+  <script src="./scripts/themeSwitcher.js"></script>
 </body>
 
 </html>

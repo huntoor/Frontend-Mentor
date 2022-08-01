@@ -5,13 +5,67 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: 'League Spartan', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--main-background);
+  color: white;
+  transition: 0.3s;
 }
 
+main {
+  width: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--screen-text);
+}
+
+.header .theme-switcher {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.header .switch {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header .switch .numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .switch #switch {
+  appearance: none;
+  border-radius: 15px;
+  width: 70px;
+  padding: 5px 4px;
+  cursor: pointer;
+  background-color: var(--keypad-background);
+}
+
+.header .switch #switch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #5cd5eb;
+  height: 14px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--equal-key);
+  transition: 0.3s;
+}
+.header .switch #switch::-webkit-slider-thumb:hover {
+  background-color: var(--equal-hover);
+}
 
 .attribution {
   font-size: 11px;
