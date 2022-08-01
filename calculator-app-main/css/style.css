@@ -12,12 +12,17 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: var(--main-background);
-  color: white;
   transition: 0.3s;
 }
 
 main {
-  width: 500px;
+  min-width: 500px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
 }
 
 .header {
@@ -67,9 +72,20 @@ main {
   background-color: var(--equal-hover);
 }
 
+.screen {
+  background-color: var(--screen-background);
+  color: var(--screen-text);
+  height: 125px;
+  padding: 40px 30px;
+  border-radius: 5px;
+  font-size: 46px;
+  text-align: right;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--screen-text);
 }
 
 .attribution a {
