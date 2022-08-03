@@ -13,14 +13,14 @@
   <link rel="stylesheet" href="./css/themes/default.css" id="themeStyleSheet">
   <!-- Main Style Sheet -->
   <link rel="stylesheet" href="./css/style.css">
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-  
+
   <title>Frontend Mentor | Calculator app</title>
-  
+
 </head>
 
 <body>
@@ -29,33 +29,50 @@
       <div class="logo">
         <h1>calc</h1>
       </div>
-      
+
       <div class="theme-switcher">
         <h5 class="text">THEME</h6>
-        <div class="switch">
-          <div class="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          <div class="switch">
+            <div class="numbers">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <input type="range" id="switch" min="1" max="3" value="1">
           </div>
-          <input type="range" id="switch" min="1" max="3" value="1">
-        </div>
       </div>
     </div>
-    
+
     <div class="screen" id="screen">0</div>
-    
+
     <div class="keypad">
-      
+      <button class="btn key">7</button>
+      <button class="btn key">8</button>
+      <button class="btn key">9</button>
+      <button class="btn action del">del</button>
+      <button class="btn key">4</button>
+      <button class="btn key">5</button>
+      <button class="btn key">6</button>
+      <button class="btn key">+</button>
+      <button class="btn key">1</button>
+      <button class="btn key">2</button>
+      <button class="btn key">3</button>
+      <button class="btn key">-</button>
+      <button class="btn key">.</button>
+      <button class="btn key">0</button>
+      <button class="btn key">/</button>
+      <button class="btn key">x</button>
+      <button class="btn action two-col">reset</button>
+      <button class="btn equal two-col">=</button>
     </div>
 
   </main>
-  
+
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/huntoor">Hunter</a>.
   </footer>
-  
+
   <script src="./scripts/themeSwitcher.js"></script>
   <script src="./scripts/screen.js"></script>
 </body>

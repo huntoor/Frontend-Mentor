@@ -7,6 +7,7 @@
   --key-background:hsl(268, 47%, 21%);
   --key-shadow: hsl(290, 70%, 36%);
   --key-background-hover: hsl(268, 54%, 44%);
+  --action-key: hsl(30, 25%, 89%);
   --action-key-background: hsl(281, 89%, 26%);
   --action-key-shadow: hsl(285, 91%, 52%);
   --action-key-hover: hsl(280, 56%, 44%);
@@ -14,7 +15,8 @@
   --equal-shadow: hsl(177, 92%, 70%);
   --equal-hover: hsl(176, 100%, 79%);
   /* Text */
-  --key-Text: hsl(52, 100%, 62%);
+  --key-text: hsl(52, 100%, 62%);
+  --equal-text: hsl(198, 19.4%, 13%);
   --screen-text: hsl(52, 100%, 62%);
   --white: hsl(0,0,100%);
 }

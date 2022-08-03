@@ -7,14 +7,15 @@
   --key-background: hsl(45, 7%, 89%);
   --key-shadow:  hsl(35, 11%, 61%);
   --key-background-hover: hsl(0,0,100%);
+  --action-key: hsl(30, 25%, 89%);
   --action-key-background: hsl(185, 42%, 37%);
   --action-key-shadow: hsl(185, 58%, 25%);
   --action-key-hover: hsl(185, 40%, 56%);
-  --equal-key: hsl(25, 99%, 27%);
+  --equal-key: hsl(25, 98%, 40%);
   --equal-shadow: hsl(6, 70%, 34%);
   --equal-hover: hsl(25, 100%, 61%);
   /* Text */
-  --key-Text: hsl(60, 10%, 19%);
+  --key-text: hsl(60, 10%, 19%);
   --screen-text: hsl(60, 10%, 19%);
   --white: hsl(0,0,100%);
 }

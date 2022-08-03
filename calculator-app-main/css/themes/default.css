@@ -6,12 +6,13 @@
   /* Keys */
   --key-background: hsl(30, 25%, 89%);
   --key-shadow: hsl(28, 16%, 65%);
-  --key-background-hover: hsl(0,0,100%);
+  --key-background-hover: white;
+  --action-key: hsl(30, 25%, 89%);
   --action-key-background: hsl(225, 21%, 49%);
   --action-key-shadow: hsl(224, 28%, 35%);
   --action-key-hover: hsl(225, 51%, 76%);
   --equal-key: hsl(6, 63%, 50%);
-  --equal-shadow: hsl(6, 70%, 34%);
+  --equal-shadow: hsl(6, 70%, 34%); 
   --equal-hover: hsl(7, 93%, 67%);
   /* Text */
   --key-text: hsl(221, 14%, 31%);

@@ -82,6 +82,56 @@ main {
   text-align: right;
 }
 
+.keypad {
+  background-color: var(--keypad-background);
+  padding: 30px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px 20px;
+}
+
+.keypad .btn {
+  height: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.keypad .key {
+  background-color: var(--key-background);
+  color: var(--key-text);
+}
+.keypad .key:hover {
+  background-color: var(--key-background-hover);
+}
+
+.keypad .action {
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: var(--action-key-background);
+  color: var(--action-key);
+}
+.keypad .action:hover {
+  background-color: var(--action-key-hover);
+}
+
+.keypad .equal {
+  background-color: var(--equal-key);
+  color: var(--equal-text, var(--screen-text));
+}
+.keypad .equal:hover {
+  background-color: var(--equal-hover);
+}
+
+.keypad .two-col {
+  grid-column: span 2;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
