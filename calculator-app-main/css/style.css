@@ -16,9 +16,8 @@ body {
 }
 
 main {
-  min-width: 500px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 500px;
+  margin: 20px 15px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -140,4 +139,11 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (max-width: 550px) {
+  main {
+    width: 90%;
+  }
 }

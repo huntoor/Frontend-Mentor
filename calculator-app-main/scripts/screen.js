@@ -1,6 +1,8 @@
 const calcScreen = document.querySelector('#screen');
+const keypadBtns = document.querySelectorAll('.btn');
 const operators = ['+', '-', '*', '/'];
 const equation = [];
+let number = 0;
 
 const equationLogicCheck = (eq, input) => {
   const operators = ['+', '-', '*', '/'];
@@ -11,7 +13,7 @@ const equationLogicCheck = (eq, input) => {
 }
 
 const keyboardInput = (event) => {
-  if (Number(event.key)) {
+  if (!isNaN(Number(event.key))) {
     equation.push(event.key);
   }
   else if (operators.includes(event.key) && equationLogicCheck(equation, event.key)) {
@@ -20,7 +22,29 @@ const keyboardInput = (event) => {
   else if (event.key === "Backspace") {
     equation.pop();
   }
+  else if (event.key === "Enter") {
+    computerDoMath(equation);
+  }
   else {
+    return;
+  }
+  calcScreen.innerHTML = equation.join('');
+}
+
+const keypadInput = (event) => {
+  const btn = event.target;
+
+  if (!isNaN(Number(btn.value))) {
+    equation.push(btn.value);
+  } else if (operators.includes(btn.value) && equationLogicCheck(equation, btn.value)) {
+    equation.push(btn.value);
+  } else if (btn.value === "del") {
+    equation.pop();
+  } else if (btn.value === "reset") {
+    equation.splice(0, equation.length);
+  } else if (btn.value === "equal") {
+    computerDoMath(equation);
+  } else {
     return;
   }
   calcScreen.innerHTML = equation.join('');
@@ -28,4 +52,6 @@ const keyboardInput = (event) => {
 
 document.body.addEventListener('keydown', keyboardInput);
 
-const keypadInput = (input) => { }
+keypadBtns.forEach(btn => {
+  btn.addEventListener('click', keypadInput);
+})
