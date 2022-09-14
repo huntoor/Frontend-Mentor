@@ -22,11 +22,18 @@ This repository is for collecting all my [Frontend-Mentor](https://www.frontendm
 - Live Site URL: [Github Page](https://huntoor.github.io/Frontend-Mentor/interactive-rating-component-main)
 
 ### [Expenses chart component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub/expenses-chart-component-Jh3PopaI7z)
-- Solution URL: [My solution]()
+- Solution URL: [My solution](https://github.com/huntoor/Frontend-Mentor/tree/main/expenses-chart-component-main)
 - Live Site URL: [Github Page](https://huntoor.github.io/Frontend-Mentor/expenses-chart-component-main)
+
+### [calculator app main](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
+- Solution URL: [My solution](https://github.com/huntoor/Frontend-Mentor/tree/main/calculator-app-main)
+- Live Site URL: [Github Page](https://huntoor.github.io/Frontend-Mentor/calculator-app-main)
 
 
 ## Personal Links
 
 - Frontend Mentor - [@huntoor](https://www.frontendmentor.io/profile/huntoor)
 - Twitter - [@Hunt00r](https://twitter.com/Hunt00r)
+- Github - [Huntoor](https://github.com/huntoor)
+- Leetcode - [Huntoor](https://leetcode.com/huntoor)
+- Codewars - [Huntoor](https://www.codewars.com/users/huntoor)
