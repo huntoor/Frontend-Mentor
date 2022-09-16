@@ -12,7 +12,7 @@ class Calculate {
       this.equation.pop();
       this.writeOnScreen(this.equation.join(""));
     } else if (btn.value === "reset") {
-      this.equation = ["0"];
+      this.equation = [""];
       this.writeOnScreen(this.equation.join(""));
     } else if (btn.value === "equal") {
       this.computerDoMath();
@@ -46,12 +46,16 @@ class Calculate {
   }
 
   writeOnScreen = (toWrite) => {
+    this.screen.innerHTML = "";
     this.screen.innerHTML = toWrite;
   }
 
   computerDoMath = () => { 
     try {
-      this.writeOnScreen(eval(this.equation.join("")));
+      const result = eval(this.equation.join(""));
+      this.equation = [""];
+      this.equation.push(result);
+      this.writeOnScreen(this.equation.join(""));
     } catch(err) {
       this.writeOnScreen("Error")
     }
